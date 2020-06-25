@@ -41,9 +41,26 @@
 	{
 		x: datosX,
 		y: datosY,
-		type: 'bar'
+		type: 'bar',
+		marker: {color: 'rgb(142,124,195)'}
 	}
 	];
 
-	Plotly.newPlot('graficaBarras', data);
+	var layout = {
+		title: 'Grafico de barras',
+		barmode: 'stack',
+		font: {
+			family: 'Raleway, sans-serif'
+		},
+		xaxis: {
+			title: 'Fechas',
+			tickangle: -45
+		},
+		yaxis: {
+			title: 'Montos'
+		},
+		bargap: 0.05
+	};
+
+	Plotly.newPlot('graficaBarras', data, layout);
 </script>

@@ -40,10 +40,27 @@
 	var trace1 = {
 		x: datosX,
 		y: datosY,
-		type: 'scatter'
+		type: 'scatter',
+		marker: {
+			color: 'rgb(164, 194, 244)',
+			size: 12
+		},
+		line: {
+			color: 'gray',
+			width: 0.5
+		}
+	};
+	var layout = {
+		title: 'Grafico lineal',
+		xaxis: {
+			title: 'Fechas'
+		},
+		yaxis: {
+			title: 'Montos'
+		}
 	};
 
 	var data = [trace1];
 
-	Plotly.newPlot('graficaLineal', data);
+	Plotly.newPlot('graficaLineal', data, layout);
 </script>
