@@ -1,3 +1,7 @@
+<?php 
+	require_once "php/conexion.php";
+?>
+
 <div id="graficaBarras"></div>
 
 <script>
